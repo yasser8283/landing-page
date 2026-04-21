@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+
+
+*{
+  font-family: "DM Sans", sans-serif;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slide {
+    from { transform: translateX(0) translateZ(0); }
+    to { transform: translateX(-50%) translateZ(0); }
+}
+
+@theme {
+    --animate-slide: slide 20s linear infinite;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0) translateZ(0); }
+    to { transform: translateX(-50%) translateZ(0); }
+}
+
+@theme {
+    --animate-marquee: marquee 10s linear infinite;
+}
+
+
